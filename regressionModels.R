@@ -2,6 +2,8 @@
 library(faraway)
 
 set.seed(689934)
+
+# Update the line below to point to the directory that you saved the data
 df = read.csv("~/Downloads/ad_report.csv", header = TRUE, sep = ",")
 summary(df)
 #head(df)
@@ -22,6 +24,7 @@ head(df)
 plot(df, main="Plot of the Response and Predictors")
 summary(df)
 
+# Update the line below to point to the directory that you saved the data
 test_df = read.csv("~/Downloads/ad2_report.csv", header = TRUE, sep = ",")
 test_df = test_df[-c(1),]
 test_df = test_df[,-c(16,17)]
